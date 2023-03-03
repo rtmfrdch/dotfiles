@@ -105,23 +105,25 @@ alias history='fc -il 1'
 # Jobs change status notify
 setopt NOTIFY
 
-# rust tools
+# aliases
+## rust tools
 alias grep='rg'
 alias cat='batcat'
 #alias ps='procs'
 alias ls='exa'
 
-# work
+function cht() {curl "cht.sh/$1"}
+alias gitcfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# aliases work
 alias janus='/Users/agayfutdinov/janus-cli get-password -pgpass'
 export PATH="$PATH:$HOME/.local/bin"
 
-# alias
+# aliaises home
 alias blog='cd /mnt/c/projects/blog/rtmfrdch.github.io'
 alias public_blog='pushd /mnt/c/projects/blog/rtmfrdch.github.io/public;\
         git add . ;\
         git commit -m "One more post";\
         git push;\
         popd'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-function cht() {curl "cht.sh/$1"}
