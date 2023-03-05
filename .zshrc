@@ -116,7 +116,7 @@ function cht() {curl "cht.sh/$1"}
 alias gitcfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # aliases work
-alias janus='/Users/agayfutdinov/janus-cli get-password -pgpass'
+alias janus='/Users/$USER/janus-cli get-password -pgpass'
 export PATH="$PATH:$HOME/.local/bin"
 
 # aliaises home
